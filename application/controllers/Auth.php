@@ -29,6 +29,7 @@ class Auth extends CI_Controller {
             );
             $this->session->set_userdata($data);
             redirect(base_url() . "principal");
+            
         } else {
             $this->session->set_flashdata("error","<span><strong>Lo sentimos,</strong> el email y contraseña ingresados no coinciden con nuestros registros</span>");
             redirect(base_url());

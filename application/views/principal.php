@@ -13,63 +13,9 @@
 		</div>
 		<div class="box-body">
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3 col-xs-12">
-					<h2 class="text-center">Buscar información del estudiante</h2>
-					<div class="form-group">
-						<input type="text" id="search-estudiante" name="search-estudiante" class="form-control" placeholder="Introduzca algo...">
-					</div>
-				</div>
-			</div>
-			<div class="row" >
-				<div class="col-md-12">
-					<div style="display: none;" id="infoEstudiante">
-						<br>
-						<p class="text-center"><strong>INFORMACION DEL ESTUDIANTE</strong></p>
-						<table class="table table-bordered" style="background: #d2d6de;">
-							<tbody>
-								<tr>
-									<th>NOMBRES:</th>
-									<td id="nombres"></td>
-								</tr>
-								<tr>
-									<th>APELLIDOS:</th>
-									<td id="apellidos"></td>
-								</tr>
-								<tr>
-									<th>DNI:</th>
-									<td id="dni"></td>
-								</tr>
-								<tr>
-									<th>SEMESTRE:</th>
-									<td id="semestre"></td>
-								</tr>
-								<tr>
-									<th>ESPECIALIDAD:</th>
-									<td id="especialidad"></td>
-								</tr>
-							</tbody>
-						</table>
-
-						
-						<table class="table table-bordered" id="tbmodulos" style="background: #d2d6de;">
-							<thead>
-								<tr>
-									<th colspan="2" class="text-center">INFORMACION DE MODULOS</th>
-									<th colspan="4" class="text-center">INFORMACION DEL CERTIFICADO</th>
-								</tr>
-								<tr>
-									<th>MODULO</th>
-									<th>PRACTICA</th>
-									<th>CERTIFICADO</th>
-									<th>FECHA DE EMISION</th>
-									<th>FECHA DE ENTREGA</th>
-									<th>N° DE REGISTRO</th>
-								</tr>
-							</thead>
-							<tbody>
-							</tbody>
-						</table>
-					</div>
+				<div class="col-md-12 text-center">
+					
+					<p>Bienvenido, <?php echo $this->session->userdata('user')?></p>
 				</div>
 			</div>
 		</div>
